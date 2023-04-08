@@ -1,8 +1,101 @@
 @import url(fonts.css);
 
+:root {
+    --green: #69CF17;
+    --white: #fff;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway";
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    position: relative;
+    background: #00000027;
+}
+
+/* intro */
+
+.intro__nav {
+    background: #000;
+    padding: 18px 0;
+}
+
+.intro__nav-txt {
+    color: var(--white);
+    font-family: "Roboto";
+}
+
+.intro__nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.intro__nav-link {
+    color: var(--white);
+}
+
+/* intro */
+
+/* header nav */
+
+.header__nav {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(125, 115, 115, 0.5);
+    backdrop-filter: blur(7.5px);
+    height: 65px;
+    display: grid;
+    place-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.header__nav-logo {
+    display: inline-block;
+}
+
+.header__nav-list {
+    display: flex; 
+    place-items: center;
+}
+
+.header__nav-link {
+    color: var(--white);
+    padding: 22px 14px;
+    height: 100%;
+    transition: .3s;
+}
+
+.header__nav-link:hover {
+    background: rgba(105, 207, 23, 0.75);
+}
+/* header nav */
+
