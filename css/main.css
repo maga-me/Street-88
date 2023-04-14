@@ -320,4 +320,22 @@ body {
 
 /* section__burger */
 
+
+/* section__maps */
+
+.section__title {
+    background: #fff;
+    font-size: 50px;
+    color: var(--green);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.map {
+    min-height: 500px;
+    width: 100%;
+}
+
+/* section__maps */
+
 /* main */
