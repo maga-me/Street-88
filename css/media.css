@@ -91,7 +91,7 @@
     }
 
     .intro__nav-txt {
-        animation-play-state: running;
+        animation: intro__nav-txt 2s infinite alternate;
     }
 
     .intro__nav-list {
@@ -107,6 +107,11 @@
         transform: scale(1.1);
     }
 
+    .header__nav-logo img {
+        max-width: 150px;
+        width: 100%;
+    }
+
     .header__content-info {
         justify-content: center;
     }
@@ -114,8 +119,6 @@
     .main__nav-link {
         padding: 20px 0;
     }
-
-    
 
     .footer__intro {
         gap: 30px;
@@ -125,9 +128,4 @@
     .footer__txt {
         font-size: 14px;
     }
-}
-
-
-@media (max-width: 375px) {
-
 }

@@ -1,0 +1,52 @@
+:root {
+    --green: #69CF17;
+    --white: #fff;
+}
+/* sp main */
+
+.section__about {
+    padding: 30px 0;
+}
+
+.about__title {
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.44), rgba(12, 12, 12, 0.44)), url(../img/sp_bg.jpg) no-repeat center center / cover;
+    font-size: 55px;
+    color: rgb(106, 207, 23, 0.7);
+    text-shadow: 0px 0px 15px rgba(191, 171, 171, 0.4);
+    text-transform: uppercase;
+    min-height: 400px;
+    height: 100%;
+    max-width: 1110px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.about__txt {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    color: var(--white);
+    line-height: 25px;
+}
+
+/* sp main */
+
+
+
+/* sp media */
+
+@media (max-width: 480px) {
+    .about__title {
+        font-size: 35px;
+    }
+
+    .about__txt {
+        font-size: 16px;
+        
+    }
+}
+
+
+/* sp media */
