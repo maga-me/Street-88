@@ -22,7 +22,7 @@
     }
 
     .header__nav {
-        position: relative;
+        position: sticky;
     }
 
     .header__nav-line {
