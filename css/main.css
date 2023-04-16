@@ -11,6 +11,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Raleway";
+    scroll-behavior: smooth;
 }
 
 a {
@@ -42,7 +43,53 @@ body {
     background: #000;
 }
 
+@keyframes intro__nav-txt {
+    0% {
+        transform: scale(1.1) translateY(50%);
+    }
+
+    25% {
+        transform: rotate(1deg) translateY(50%);
+    }
+
+    30% {
+        transform: rotate(-1deg) translateY(50%);
+    }
+
+    40% {
+        transform: rotate(2deg) translateY(50%);
+    }
+
+    50% {
+        transform: scale(1.2) translateY(50%);
+    }
+
+    60% {
+        transform: rotate(1deg) translateY(50%);
+    }
+
+    70% {
+        transform: rotate(-1deg) translateY(50%);
+    }
+
+    85% {
+        transform: rotate(2deg) translateY(50%);
+    }
+
+
+    100% {
+        transform: scale(1.1) translateY(50%);
+    }
+}
+
 /* intro */
+
+.intro__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
 .intro__nav {
     background: #000;
@@ -53,11 +100,17 @@ body {
 .intro__nav-txt {
     color: var(--white);
     font-family: "Roboto";
+    transition: 400ms;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: intro__nav-txt 2s infinite;
+    animation-play-state: paused;
 }
 
 .intro__nav-list {
     display: flex;
     gap: 20px;
+    transition: 300ms;
+    flex-wrap: wrap;
 }
 
 .intro__nav-link {
@@ -87,8 +140,8 @@ body {
 }
 
 .header__nav-list {
-    display: flex; 
-    place-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .header__nav-line {
@@ -127,11 +180,13 @@ body {
     transition: 400ms;
 }
 
+
 .header__nav-link {
     color: var(--white);
     padding: 22px 14px;
     height: 100%;
     transition: .3s;
+    text-align: center;
 }
 
 .header__nav-link:hover {
@@ -182,6 +237,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .header__content-info-price {
@@ -259,7 +316,7 @@ body {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     place-items: center;
     padding: 15px;
@@ -339,3 +396,51 @@ body {
 /* section__maps */
 
 /* main */
+
+/* footer start */
+
+footer {
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+}
+
+.footer__content {
+    padding: 30px 0;
+    margin-bottom: 80px;
+}
+
+.footer__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 82px;
+    flex-wrap: wrap;
+}
+
+.footer__tel {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__link {
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.footer__txt {
+    text-align: center;
+    font-family: "Roboto";
+    color: var(--white);
+    background: #1A3406;
+    padding: 19px 0;
+}
+
+/* footer start */
